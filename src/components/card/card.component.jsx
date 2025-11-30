@@ -1,19 +1,18 @@
-import './card.style.css';
+import "./card.style.css";
 
-const Card = ({etoMonster}) =>{
-    const {id, name, email} = etoMonster;
+const Card = ({ etoMonster }) => {
+  const { id, name, email } = etoMonster;
 
-    return(
-        <div className='card-container' key={id}>
-        <img 
-            alt={`monster ${name}`}
-            src={`https://robohash.org/${id}?set=set2&size=180x180`}
-        />
-        <h2>{name}</h2>
-        <p>{email}</p>
-
-        </div>
-    );
-}
+  return (
+    <div className='card-container' key={id}>
+      <img
+        alt={`monster ${name}`}
+        src={`https://robohash.org/${id}?set=set2&size=180x180`}
+      />
+      <h2>{name}</h2>
+      <p>{email}</p>
+    </div>
+  );
+};
 
 export default Card;
